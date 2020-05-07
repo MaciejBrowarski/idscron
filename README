@@ -1,0 +1,17 @@
+run this program from root account,
+in cron.ids file is name used for UID and GID proccess, any tasks (without ping.pl) will be runnign from this UID
+To start use:
+./cron.sh {test|cmit] start 
+to stop 
+./cron.sh {test|cmit] stop
+
+This script also run PERL main script
+To start use:
+./cron.sh {test|cmit] start_perl
+to stop
+./cron.sh {test|cmit] stop_perl
+
+action for configure file (cron.ids):
+./cron.sh [cmit|test] get  - get file from IDS to file
+./cron.sh [cmit|test] put  - copy local file to IDS
+./cron.sh [test|cmit] diff - compare cron.ids with local file
