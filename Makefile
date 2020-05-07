@@ -19,6 +19,7 @@ CFLAGS=-Wall -g -ggdb -D_FILE_OFFSET_BITS=64 -O2 -lpthread -lz -lrt -rdynamic
 all: cronids
 
 cronids:
+	mkdir bin/
 	$(CC) $(CFLAGS) -DVERSION=$(VERSION) -o ./bin/$(NAME) $(SOURCE)/$(NAME).c 
 clean:
 	$(RM) ./bin/idscron
