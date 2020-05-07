@@ -89,9 +89,9 @@ case $LOGNAME in
 			cmitvn3)
 			HOST=$HOST"03"
 			;;
-	*)
-	HOST=${HOSTNAME}00
-	;;
+	        *)
+	        HOST=${HOSTNAME}00
+    esac
 esac
 
 cd $BIN
